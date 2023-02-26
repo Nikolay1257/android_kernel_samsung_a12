@@ -12,4 +12,4 @@ export CONFIG_SECTION_MISMATCH_WARN_ONLY=y
 make -C $(pwd) O=$(pwd)/out KCFLAGS=-w CONFIG_SECTION_MISMATCH_WARN_ONLY=y a12_defconfig
 make -C $(pwd) O=$(pwd)/out KCFLAGS=-w CONFIG_SECTION_MISMATCH_WARN_ONLY=y -j8
 
-cp out/arch/arm64/boot/Image $(pwd)/arch/arm64/boot/Image
+cp out/arch/arm64/boot/Image.gz $(pwd)/arch/arm64/boot/Image.gz
